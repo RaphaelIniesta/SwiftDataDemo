@@ -12,6 +12,7 @@
 		640B97E22B83C03C00F933AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640B97E12B83C03C00F933AF /* Assets.xcassets */; };
 		640B97E52B83C03C00F933AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640B97E42B83C03C00F933AF /* Preview Assets.xcassets */; };
 		640B97EC2B83C05500F933AF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640B97EB2B83C05500F933AF /* DataManager.swift */; };
+		6412F32F2C178D56000E2D07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6412F32E2C178D56000E2D07 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		640B97E12B83C03C00F933AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		640B97E42B83C03C00F933AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		640B97EB2B83C05500F933AF /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6412F32E2C178D56000E2D07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				640B97DD2B83C03B00F933AF /* AulaSwiftDataApp.swift */,
 				640B97DF2B83C03B00F933AF /* ContentView.swift */,
+				6412F32E2C178D56000E2D07 /* ViewController.swift */,
 				640B97EB2B83C05500F933AF /* DataManager.swift */,
 				640B97E12B83C03C00F933AF /* Assets.xcassets */,
 				640B97E32B83C03C00F933AF /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				640B97E02B83C03B00F933AF /* ContentView.swift in Sources */,
 				640B97EC2B83C05500F933AF /* DataManager.swift in Sources */,
+				6412F32F2C178D56000E2D07 /* ViewController.swift in Sources */,
 				640B97DE2B83C03B00F933AF /* AulaSwiftDataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

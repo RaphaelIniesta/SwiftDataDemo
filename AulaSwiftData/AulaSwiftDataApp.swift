@@ -10,9 +10,13 @@ import SwiftData
 
 @main
 struct AulaSwiftDataApp: App {
+    
+    @StateObject var vm = ViewController()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(vm)
         }
         .modelContainer(for: DataManager.self)
     }

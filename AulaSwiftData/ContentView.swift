@@ -12,23 +12,9 @@ struct ContentView: View {
     
     @Environment(\.modelContext) private var context
     @Query private var items: [DataManager]
+    @EnvironmentObject var vm: ViewController
     
     @State var text: String = ""
-    
-    // Funções
-    func addItem(_ item: String) {
-        let item = DataManager(item: item)
-        context.insert(item)
-    }
-    
-    func deleteItem(_ item: DataManager) {
-        context.delete(item)
-    }
-    
-    func updateItem(_ item: DataManager) {
-        item.item += " Atualizada"
-        try? context.save()
-    }
     
     var body: some View {
         VStack {
@@ -38,7 +24,7 @@ struct ContentView: View {
                     .textFieldStyle(.roundedBorder)
                 
                 Button {
-                    addItem(text)
+                    vm.addItem(text, context: context)
                 } label: {
                     Image(systemName: "plus.circle.fill")
                         .font(.title)
@@ -55,7 +41,7 @@ struct ContentView: View {
                         Spacer()
                         
                         Button {
-                            updateItem(item)
+                            vm.updateItem(item, context: context)
                         } label: {
                             Image(systemName: "arrow.triangle.2.circlepath")
                         }
@@ -63,7 +49,7 @@ struct ContentView: View {
                 }
                 .onDelete { indexes in
                     for index in indexes {
-                        deleteItem(items[index])
+                        vm.deleteItem(items[index], context: context)
                     }
                 }
             }
